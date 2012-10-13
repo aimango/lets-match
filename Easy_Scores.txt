@@ -1,0 +1,20 @@
+tanner
+ 6400 
+Ella
+ 6700 
+Randy
+ 5440 
+ian
+ 5695 
+frank
+ 5695 
+cassandra
+ 4960 
+andy
+ 3922 
+yuna
+ 5478 
+frgfvb
+ 3760 
+sam
+ 3182 
