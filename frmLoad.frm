@@ -106,8 +106,12 @@ Private Sub Form_Load()
 End Sub
 
 Private Sub btnExit_Click()
-If MsgBox("You are now exiting the game.", vbInformation + vbOKCancel, "Close Game") = vbOK Then
-        Unload Me
+    If MsgBox("You are now exiting the game.", vbInformation + vbOKCancel, "Close Game") = vbOK Then
+        Dim f As Form
+        For Each f In Forms
+             Unload f
+        Next
+             End
     End If
 End Sub
 
@@ -118,7 +122,7 @@ Private Sub btnSelect_Click()
     ElseIf lstNavigate = "1 Player - Hard Mode" Then
         frm1P_Hard.Visible = True
     ElseIf lstNavigate = "2 Player" Then
-        frmPvsP.Visible = True
+        frm2P.Visible = True
     ElseIf lstNavigate = "High Scores" Then
         frmScores.Visible = True
     ElseIf lstNavigate = "About Game" Then
@@ -126,8 +130,8 @@ Private Sub btnSelect_Click()
         MsgBox "About Let's Match" & _
             vbCrLf & "Created by: Elisa Lou" & _
             vbCrLf & "Class TIK20I" & _
-            vbCrLf & "Last updated January 24, 2008" & _
-            vbCrLf & "2007-2008", vbInformation, "About Let's Match"
+            vbCrLf & "Last updated October 2012" & _
+            vbCrLf & "(C) 2007-2012", vbInformation, "About Let's Match"
         
     End If
 End Sub

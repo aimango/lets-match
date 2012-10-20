@@ -1,5 +1,5 @@
 VERSION 5.00
-Begin VB.Form frmPvsP 
+Begin VB.Form frm2P 
    Appearance      =   0  'Flat
    BackColor       =   &H0080C0FF&
    BorderStyle     =   1  'Fixed Single
@@ -610,7 +610,7 @@ Begin VB.Form frmPvsP
       Width           =   735
    End
 End
-Attribute VB_Name = "frmPvsP"
+Attribute VB_Name = "frm2P"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
@@ -722,7 +722,7 @@ Private Sub imgCard_Click(Index As Integer)
         MsgBox ("Great Job!")
         GoScores
         If MsgBox("Would you like to play 2 player again?", vbYesNo) = vbNo Then
-            frmPvsP.Visible = False
+            frm2P.Visible = False
         Else
             btnStart_Click
         End If

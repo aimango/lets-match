@@ -526,7 +526,7 @@ Private Sub Form_Load()
     lblUser.Caption = sUser
     
     'shows Top Score to Beat
-    Open "topscoreH.txt" For Input As #1
+    Open App.Path & "\Scores\TopScoreH.txt" For Input As #1
         Do Until EOF(1)
             Input #1, nBestScore
             lblBestScore.Caption = nBestScore

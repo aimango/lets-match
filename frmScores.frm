@@ -100,14 +100,14 @@ Private Sub imgScore_Click()
     picHard.Print "Username", "High Score"
     picEasy.Print "Username", "High Score"
     
-    Open "hard_scores.txt" For Input As #1
+    Open App.Path & "\Scores\Hard_Scores.txt" For Input As #1
         Do Until EOF(1)
             Input #1, sListedUser, nHScore
             picHard.Print sListedUser, nHScore
         Loop
     Close #1
     
-    Open "easy_scores.txt" For Input As #2
+    Open App.Path & "\Scores\Easy_Scores.txt" For Input As #2
         Do Until EOF(2)
             Input #2, sListedUser, nHScore
             picEasy.Print sListedUser, nHScore
